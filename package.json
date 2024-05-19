@@ -1,0 +1,22 @@
+{
+    "name": "@lesnoypudge/devtools",
+    "version": "1.0.0",
+    "description": "lesnoypudge's devtools",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "author": "LesnoyPudge",
+    "license": "ISC",
+    "keywords": [
+        "lesnoypudge",
+        "devtools"
+    ],
+    "dependencies": {
+        "@lesnoypudge/utils": "^7.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.4.5"
+    }
+}
