@@ -47,7 +47,9 @@ const styles = css`
             all: unset;
         }
     }
+`;
 
+const globalStyles = css`
     html[data-outline=true] * {
         box-shadow: inset 0 0 0px 0.5px red, 0 0 0px 0.5px red !important;
     }
@@ -85,13 +87,27 @@ const defaultConfig: Config = {
     },
 };
 
+
+const init = (() => {
+    let isInit = false;
+
+    return () => {
+        if (isInit) return;
+        isInit = true;
+        const globalStyle = document.createElement('style');
+        globalStyle.textContent = globalStyles;
+        document.body.appendChild(globalStyle)
+    }
+})();
+
 export const devtools = (
     root: HTMLElement,
     onClose: () => void,
     config: Config = {},
 ) => {
     config = Object.assign({}, defaultConfig, config);
-
+    init();
+    
     const closeButton = document.createElement('button');
     closeButton.textContent = 'close devtools';
     closeButton.tabIndex = -1;
