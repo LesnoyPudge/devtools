@@ -19,7 +19,6 @@ const styles = css`
         max-height: 80vh;
         overflow-y: scroll;
         outline: 4px solid white;
-        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -45,6 +44,7 @@ const styles = css`
 
         * {
             all: unset;
+            box-sizing: border-box;
         }
     }
 `;

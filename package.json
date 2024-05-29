@@ -1,6 +1,6 @@
 {
     "name": "@lesnoypudge/devtools",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "lesnoypudge's devtools",
     "main": "build/index.js",
     "types": "build/index.d.ts",
@@ -14,7 +14,7 @@
         "devtools"
     ],
     "dependencies": {
-        "@lesnoypudge/utils": "^7.0.0"
+        "@lesnoypudge/utils": "^7.4.2"
     },
     "devDependencies": {
         "typescript": "^5.4.5"
