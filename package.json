@@ -1,6 +1,6 @@
 {
     "name": "@lesnoypudge/devtools",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "lesnoypudge's devtools",
     "main": "build/index.js",
     "types": "build/index.d.ts",

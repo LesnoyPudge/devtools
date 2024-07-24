@@ -1,4 +1,5 @@
 import { css } from "@lesnoypudge/utils";
+import { startLagRadar, stopLagRadar } from "./lagRadar";
 
 
 
@@ -85,6 +86,10 @@ const defaultConfig: Config = {
     setAutoTheme: () => {
         document.documentElement.dataset.theme = 'auto';
     },
+
+    startLagRadar,
+    
+    stopLagRadar,
 };
 
 

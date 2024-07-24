@@ -1,5 +1,5 @@
 {
-    "include": ["src/**/*.ts"],
+    "include": ["src/**/*.ts", "src/lagRadar.js"],
     "exclude": [
         "node_modules",
         "build"
